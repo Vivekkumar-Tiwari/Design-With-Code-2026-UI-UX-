@@ -1,7 +1,6 @@
 # Cover Page Design
 <img width="1584" height="396" alt="LinkedIn cover 2026" src="https://github.com/user-attachments/assets/d0b06047-b940-4468-b292-5615922ca4f4" />
 
-
 # Landing Page Of VTN FOOD.
 <img width="1920" height="3755" alt="screencapture-file-C-Users-Shweta-Tiwari-Downloads-stitch-vtn-food-delivery-landing-page-code-html-2026-01-09-19_11_00" src="https://github.com/user-attachments/assets/042cc3e6-a3d5-4358-a6f0-5242290b4dad" />
 
