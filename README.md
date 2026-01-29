@@ -1,4 +1,4 @@
-# Cover Page Design
+# Cover Page Design For LinkedIn
 <img width="1584" height="396" alt="LinkedIn cover 2026" src="https://github.com/user-attachments/assets/d0b06047-b940-4468-b292-5615922ca4f4" />
 
 # Landing Page Of VTN FOOD.
