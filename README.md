@@ -1,3 +1,6 @@
+# my profile
+<img width="1620" height="2025" alt="Vivek branding" src="https://github.com/user-attachments/assets/58929430-9228-4485-b44d-8dd737a1f424" />
+
 # Cover Page Design For LinkedIn
 <img width="1584" height="396" alt="LinkedIn cover 2026" src="https://github.com/user-attachments/assets/d0b06047-b940-4468-b292-5615922ca4f4" />
 
