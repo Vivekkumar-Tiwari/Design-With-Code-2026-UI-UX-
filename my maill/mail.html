@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paint Away Tours - South of France</title>
+    <style>
+        /* --- General Layout --- */
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #555;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            box-shadow: 0 4px 15px rgba(156, 29, 29, 0.1);
+        }
+
+        /* --- Header --- */
+        header {
+            background-color: #d8e4d8;
+            /* Pale Sage Green */
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        .logo-placeholder {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            border: 2px solid #333;
+            display: inline-block;
+            padding: 10px 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* --- Hero Section --- */
+        .hero {
+            position: relative;
+            background-image: url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=600');
+            background-size: cover;
+            background-position: center;
+            height: 350px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero-overlay {
+            background: rgba(0, 0, 0, 0.2);
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin: 0;
+            font-style: italic;
+            color: #fffb9d;
+            /* Pale Yellow Title */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero h2 {
+            font-size: 24px;
+            margin: 5px 0;
+            font-weight: 400;
+        }
+
+        .banner-bar {
+            background-color: #e2a2b5;
+            /* Pink Banner */
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-style: italic;
+            font-size: 18px;
+        }
+
+        /* --- Retreat Content Sections --- */
+        .section {
+            padding: 45px 40px;
+            text-align: center;
+            font-style: italic;
+        }
+
+        .section h3 {
+            font-size: 20px;
+            margin-top: 0;
+            color: #333;
+            font-weight: normal;
+        }
+
+        .section h3 strong {
+            font-weight: bold;
+        }
+
+        .highlight-title {
+            color: #d68b63;
+            /* Terracotta Orange */
+            font-weight: bold;
+            margin: 20px 0 10px 0;
+            font-size: 18px;
+        }
+
+        .feature-list {
+            list-style: none;
+            padding: 0;
+            margin: 0 auto 25px auto;
+            max-width: 450px;
+            line-height: 1.8;
+            font-size: 16px;
+        }
+
+        /* --- Colors per Section --- */
+        .oil-section {
+            background-color: #fef4bf;
+        }
+
+        /* Yellow Background */
+        .watercolor-section {
+            background-color: #f6b1b1;
+        }
+
+        /* Salmon/Pink Background */
+
+        /* --- Buttons --- */
+        .btn {
+            display: inline-block;
+            background-color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            font-style: italic;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+
+        .btn-oil {
+            color: #d68b63;
+        }
+
+        .btn-watercolor {
+            color: #e2a2b5;
+        }
+
+        /* --- Footer --- */
+        footer {
+            padding: 30px;
+            background-color: #f9f9f9;
+            text-align: center;
+            font-size: 12px;
+            color: #888;
+        }
+
+        footer hr {
+            border: 0;
+            border-top: 1px solid #eee;
+            margin-bottom: 20px;
+        }
+
+        .social-links {
+            margin-top: 15px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <div class="logo-placeholder">Paint Away Tours</div>
+        </header>
+
+        <div class="hero">
+            <div class="hero-overlay">
+                <h1>South of France</h1>
+                <h2>Two Retreats, One Destination</h2>
+            </div>
+        </div>
+
+        <div class="banner-bar">
+            Realistic Oil or Expressive watercolor<br>
+            Two unique ways to grow your art
+        </div>
+
+        <div class="section oil-section">
+            <h3>Realistic Oil with <strong>Randy South</strong></h3>
+            <p class="highlight-title">Why this retreat stands out:</p>
+            <ul class="feature-list">
+                <li>Daily plein air oil painting sessions in vineyards and cloisters</li>
+                <li>Technical guidance to refine realism and color harmony</li>
+                <li>Studio critiques and individual support</li>
+                <li>Accommodation, meals, and cultural immersion included</li>
+            </ul>
+            <a href="https://your-link-here.com/oil" class="btn btn-oil">View Retreat</a>
+        </div>
+
+        <div class="section watercolor-section">
+            <h3>Expressive Watercolor with <strong>Dongfeng Li</strong></h3>
+            <p class="highlight-title">What makes this retreat unique:</p>
+            <ul class="feature-list">
+                <li>Explore expressive brushwork and color theory in watercolor</li>
+                <li>Daily plein air sessions across the French countryside</li>
+                <li>Learn to create bold and dynamic compositions</li>
+                <li>Leave with a portfolio of expressive works</li>
+            </ul>
+            <a href="https://your-link-here.com/watercolor" class="btn btn-watercolor">Explore Retreat</a>
+        </div>
+
+        <footer>
+            <hr>
+            <p>© 2025 Paint Away Tours SAS. All rights reserved. IM034220001.</p>
+            <div class="social-links">
+                🌐 📸 🎥 ✉️
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

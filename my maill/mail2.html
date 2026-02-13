@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Paint Away Tours - South of France</title>
+    <style>
+        /* --- Reset & Basics --- */
+        body,
+        table,
+        td,
+        a {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+
+        table,
+        td {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+
+        img {
+            -ms-interpolation-mode: bicubic;
+            border: 0;
+            outline: none;
+            text-decoration: none;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #555555;
+            width: 100% !important;
+            height: 100% !important;
+        }
+
+        /* --- Layout --- */
+        .wrapper {
+            width: 100%;
+            table-layout: fixed;
+            background-color: #f4f4f4;
+            padding-bottom: 40px;
+        }
+
+        .main-container {
+            background-color: #ffffff;
+            margin: 0 auto;
+            width: 100%;
+            max-width: 600px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            border-spacing: 0;
+            font-family: inherit;
+        }
+
+        /* --- Header --- */
+        .header {
+            background-color: #d8e4d8;
+            /* Pale Sage Green */
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        .logo-box {
+            display: inline-block;
+            border: 2px solid #333333;
+            padding: 12px 24px;
+            color: #333333;
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-decoration: none;
+        }
+
+        /* --- Hero Section --- */
+        /* Note: Background images in email require specific VML for Outlook, 
+           but for general web/mobile compatibility simplified CSS is used here. */
+        .hero {
+            background-image: url('https://images.unsplash.com/photo-1596322649080-692751ec3758?q=80&w=600&auto=format&fit=crop');
+            background-color: #666666;
+            /* Fallback */
+            background-size: cover;
+            background-position: center;
+            height: 350px;
+            width: 100%;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .hero-content {
+            background: rgba(0, 0, 0, 0.25);
+            /* Overlay for text readability */
+            display: inline-block;
+            /* Helps with centering in some contexts */
+            width: 100%;
+            height: 350px;
+            vertical-align: middle;
+        }
+
+        /* Table cell for vertical alignment in email */
+        .hero-td {
+            height: 350px;
+            vertical-align: middle;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin: 0 0 10px 0;
+            font-style: italic;
+            color: #fffb9d;
+            /* Pale Yellow */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            line-height: 1.1;
+        }
+
+        .hero h2 {
+            font-size: 24px;
+            margin: 0;
+            font-weight: 400;
+            color: #ffffff;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+
+        /* --- Banner --- */
+        .banner-bar {
+            background-color: #e2a2b5;
+            /* Pink */
+            color: #ffffff;
+            padding: 20px 15px;
+            text-align: center;
+            font-style: italic;
+            font-size: 18px;
+            line-height: 1.4;
+        }
+
+        /* --- Sections --- */
+        .content-section {
+            padding: 45px 30px;
+            text-align: center;
+            font-style: italic;
+        }
+
+        .oil-bg {
+            background-color: #fef4bf;
+        }
+
+        .watercolor-bg {
+            background-color: #f6b1b1;
+        }
+
+        .section-title {
+            font-size: 20px;
+            margin: 0 0 15px 0;
+            color: #333333;
+            font-weight: normal;
+        }
+
+        .section-title strong {
+            font-weight: bold;
+        }
+
+        .highlight-text {
+            color: #d68b63;
+            /* Terracotta */
+            font-weight: bold;
+            font-size: 18px;
+            margin: 0 0 15px 0;
+            display: block;
+        }
+
+        .feature-list {
+            margin: 0 auto 30px auto;
+            padding: 0;
+            text-align: left;
+            display: inline-block;
+            max-width: 480px;
+            color: #555555;
+        }
+
+        .feature-list li {
+            list-style-type: none;
+            /* Removed default bullets */
+            margin-bottom: 8px;
+            font-size: 16px;
+            line-height: 1.6;
+            text-align: center;
+            /* Centering list items as per design image aesthetics often implied */
+        }
+
+        /* --- Buttons --- */
+        .btn {
+            display: inline-block;
+            background-color: #ffffff;
+            padding: 14px 35px;
+            text-decoration: none;
+            font-weight: bold;
+            font-style: italic;
+            border-radius: 4px;
+            border: 1px solid #dddddd;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-oil {
+            color: #d68b63;
+        }
+
+        .btn-water {
+            color: #e2a2b5;
+        }
+
+        /* --- Footer --- */
+        .footer {
+            background-color: #ffffff;
+            padding: 30px 20px;
+            text-align: center;
+            font-size: 12px;
+            color: #888888;
+        }
+
+        .footer-line {
+            border-top: 1px solid #eeeeee;
+            margin: 0 auto 20px auto;
+            width: 80%;
+        }
+
+        .social-icons {
+            font-size: 20px;
+            letter-spacing: 10px;
+            margin-top: 15px;
+        }
+
+        /* --- Mobile Responsiveness --- */
+        @media screen and (max-width: 600px) {
+            .main-container {
+                width: 100% !important;
+            }
+
+            .hero {
+                height: 280px !important;
+            }
+
+            .hero-td {
+                height: 280px !important;
+            }
+
+            .hero h1 {
+                font-size: 32px !important;
+            }
+
+            .hero h2 {
+                font-size: 18px !important;
+            }
+
+            .content-section {
+                padding: 30px 20px !important;
+            }
+
+            .feature-list li {
+                font-size: 15px !important;
+            }
+
+            .btn {
+                display: block !important;
+                margin: 0 auto !important;
+                max-width: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <center class="wrapper">
+        <table class="main-container" role="presentation" cellpadding="0" cellspacing="0">
+            <!-- Header -->
+            <tr>
+                <td class="header">
+                    <span class="logo-box">Paint Away<br><span
+                            style="font-size: 14px; letter-spacing: 4px;">TOURS</span></span>
+                </td>
+            </tr>
+
+            <!-- Hero Section with Background Image -->
+            <tr>
+                <td onclick="window.location.href='#'"
+                    style="cursor: pointer; background-image: url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=600'); background-size: cover; background-position: center;"
+                    bgcolor="#666666" height="350" class="hero">
+                    <!--[if gte mso 9]>
+                    <v:image xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="border: 0; display: inline-block; width: 600px; height: 350px;" src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=600" />
+                    <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="display: inline-block; position: absolute; width: 600px; height: 350px;">
+                    <v:fill opacity="0%" color="#000000" />
+                    <div style="padding: 10px; color: #ffffff;">
+                    <![endif]-->
+
+                    <table role="presentation" width="100%" height="100%" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td align="center" valign="middle" class="hero-td" style="background: rgba(0,0,0,0.2);">
+                                <h1>South of France</h1>
+                                <h2>Two Retreats, One Destination</h2>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <!--[if gte mso 9]>
+                    </div>
+                    </v:rect>
+                    <![endif]-->
+                </td>
+            </tr>
+
+            <!-- Banner Line -->
+            <tr>
+                <td class="banner-bar">
+                    Realistic Oil or Expressive Watercolor<br>
+                    Two unique ways to grow your art
+                </td>
+            </tr>
+
+            <!-- Oil Section -->
+            <tr>
+                <td class="content-section oil-bg">
+                    <h3 class="section-title">Realistic Oil with <strong>Randy South</strong></h3>
+                    <span class="highlight-text" style="color: #d68b63;">Why this retreat stands out:</span>
+
+                    <ul class="feature-list">
+                        <li>Daily plein air oil painting sessions in vineyards and cloisters</li>
+                        <li>Technical guidance to refine realism and color harmony</li>
+                        <li>Studio critiques and individual support</li>
+                        <li>Accommodation, meals, and cultural immersion included</li>
+                    </ul>
+
+                    <a href="#" class="btn btn-oil">View Retreat</a>
+                </td>
+            </tr>
+
+            <!-- Watercolor Section -->
+            <tr>
+                <td class="content-section watercolor-bg">
+                    <h3 class="section-title">Expressive Watercolor with <strong>Dongfeng Li</strong></h3>
+                    <span class="highlight-text" style="color: #ffffff; text-shadow: 0 1px 2px rgba(0,0,0,0.1);">What
+                        makes this retreat unique:</span>
+                    <!-- Note: Image had white text for "What makes..." on pink? Or similar. Checking aesthetics.
+                         Actually image has white text for "What makes this retreat unique" in the pink section?
+                         Looking at the image_1.png provided in context... 
+                         The pink section ("Expressive watercolor...") text "What makes this retreat unique:" looks white.
+                         I will replicate that.
+                    -->
+
+                    <ul class="feature-list">
+                        <li>Explore expressive brushwork and color theory in watercolor</li>
+                        <li>Daily plein air sessions across the French countryside</li>
+                        <li>Learn to create bold and dynamic compositions</li>
+                        <li>Leave with a portfolio of expressive works</li>
+                    </ul>
+
+                    <a href="#" class="btn btn-water">Explore Retreat</a>
+                </td>
+            </tr>
+
+            <!-- Footer -->
+            <tr>
+                <td class="footer">
+                    <div class="footer-line"></div>
+                    <p style="margin: 0 0 15px 0;">© 2025 Paint Away Tours SAS. All rights reserved. IM034220001.</p>
+                    <div class="social-icons">
+                        <a href="#" style="text-decoration: none; margin: 0 5px;"><img
+                                src="https://img.icons8.com/ios-filled/24/000000/facebook-new.png" alt="Facebook"
+                                width="24" height="24" style="border: 0; outline: none; text-decoration: none;"></a>
+                        <a href="#" style="text-decoration: none; margin: 0 5px;"><img
+                                src="https://img.icons8.com/ios-filled/24/000000/instagram-new.png" alt="Instagram"
+                                width="24" height="24" style="border: 0; outline: none; text-decoration: none;"></a>
+                        <a href="#" style="text-decoration: none; margin: 0 5px;"><img
+                                src="https://img.icons8.com/ios-filled/24/000000/youtube-play.png" alt="YouTube"
+                                width="24" height="24" style="border: 0; outline: none; text-decoration: none;"></a>
+                        <a href="#" style="text-decoration: none; margin: 0 5px;"><img
+                                src="https://img.icons8.com/ios-filled/24/000000/globe.png" alt="Website" width="24"
+                                height="24" style="border: 0; outline: none; text-decoration: none;"></a>
+                        <a href="#" style="text-decoration: none; margin: 0 5px;"><img
+                                src="https://img.icons8.com/ios-filled/24/000000/mail.png" alt="Email" width="24"
+                                height="24" style="border: 0; outline: none; text-decoration: none;"></a>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </center>
+</body>
+
+</html>
