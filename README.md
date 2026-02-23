@@ -22,3 +22,7 @@
 # Mobile App Design
 <img width="412" height="1071" alt="screen 1" src="https://github.com/user-attachments/assets/ac66013c-0de2-4516-99a4-3925ab58bb2d" />
 
+# Heritage Logo
+<img width="8139" height="8139" alt="Group 34" src="https://github.com/user-attachments/assets/b0e0a850-d9b8-443e-ab05-eed3f768adcb" />
+
+
