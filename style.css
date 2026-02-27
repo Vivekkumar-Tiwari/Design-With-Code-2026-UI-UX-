@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+ 
 body {
   font-family: 'Inter', sans-serif;
   color: #111;
@@ -196,4 +196,5 @@ nav a {
   color: #aaa;
   font-size: 14px;
 }
+
 
